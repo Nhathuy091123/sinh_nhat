@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1729">
+  <meta name="description" content="Chúc mừng sinh nhật chàng trai tuổi 23! Bánh kem, điều ước và lời chúc cho một chặng đường mới thật rực rỡ.">
+  <meta property="og:title" content="Chào tuổi 23 — Chúc mừng sinh nhật">
+  <meta property="og:description" content="Tuổi 23: dám mơ, dám làm, dám tỏa sáng. Mở thiệp và ước một điều nhé!">
+  <meta property="og:type" content="website">
+  <title>Chào tuổi 23 — Chúc mừng sinh nhật</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230b1729'/%3E%3Cpath d='M15 34h34v19H15z' fill='%2336587c'/%3E%3Cpath d='M15 34c5-8 29-8 34 0' fill='%23e4c68e'/%3E%3Cpath d='M32 17v14' stroke='%23e4c68e' stroke-width='4'/%3E%3Cpath d='M32 5c-8 9-8 14 0 14s8-5 0-14' fill='%23eab962'/%3E%3C/svg%3E">
+  <style>
+    @font-face{font-family:BirthdaySerif;src:url('./assets/serif.woff') format('woff');font-display:swap;font-weight:400}
+    @font-face{font-family:BirthdaySans;src:url('./assets/sans.woff') format('woff');font-display:swap;font-weight:400}
+    :root{--cream:#0b1729;--paper:#14243a;--wine:#ebcb91;--pink:#647e9c;--rose:#d6b77b;--ink:#e8edf4;--muted:#b1becf;--line:#34465f;--gold:#ddb978;--serif:BirthdaySerif,Georgia,serif;--sans:BirthdaySans,system-ui,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:32px}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.7;-webkit-font-smoothing:antialiased}button,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default;opacity:.7}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--rose);outline-offset:5px}::selection{background:#355477;color:var(--wine)}[hidden]{display:none!important}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 56px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:27px;padding-bottom:25px;border-bottom:1px solid var(--line)}.brand{text-decoration:none;display:flex;align-items:center;gap:10px;font-size:14px;letter-spacing:-.3px;color:var(--wine)}.brand svg{width:23px;height:23px}.top-actions{display:flex;align-items:center;gap:22px}.nav-link{font-size:12px;text-decoration:none;color:var(--muted)}.icon-btn{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:30px;background:transparent;padding:8px 14px;color:var(--wine);font-size:11px;transition:background .2s}.icon-btn:hover{background:#1c304a}.icon-btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.6}.sound-on svg{animation:sway 1.4s ease-in-out infinite alternate}
+    .hero{display:grid;grid-template-columns:1.08fr 1fr;align-items:center;min-height:650px;padding:60px 0 68px;gap:12px;position:relative}.eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:2px;font-size:10px;color:var(--rose);margin:0 0 24px}.eyebrow::before{content:'';display:block;width:28px;height:1px;background:currentColor}.hero h1{font-family:var(--serif);font-weight:400;letter-spacing:-4.6px;line-height:1.17;font-size:clamp(54px,6.4vw,80px);margin:0 0 24px;color:var(--wine)}.hero h1 em{font-weight:400;position:relative;display:inline-block}.hero h1 em::after{content:'';position:absolute;bottom:-5px;left:3px;right:7px;height:9px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 10'%3E%3Cpath d='M2 8Q175-5 358 5' fill='none' stroke='%2393b1d0' stroke-width='2'/%3E%3C/svg%3E") center/100% 100% no-repeat}.hero-intro{max-width:405px;font-size:14px;line-height:1.95;color:var(--muted);margin:27px 0 30px}.hero-intro strong{font-weight:400;color:var(--wine)}.primary{background:var(--wine);border:1px solid var(--wine);color:var(--paper);border-radius:40px;padding:14px 22px;display:inline-flex;align-items:center;justify-content:center;gap:16px;transition:transform .2s,background .2s;line-height:1.5;font-size:12px;min-height:48px}.primary:hover{background:#ffdda4;transform:translateY(-2px)}.primary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6}.tiny-note{font-size:10px;color:var(--muted);margin:14px 0 0;display:flex;gap:6px;align-items:center}.tiny-note svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:1.4}
+    .cake-scene{position:relative;align-self:center;min-height:480px;display:flex;align-items:center;justify-content:center}.cake-scene::before{content:'';position:absolute;width:410px;height:410px;max-width:100%;background:#20344e;border-radius:50%;opacity:.8;transform:translate(5px,9px)}.cake-button{padding:0;position:relative;width:100%;max-width:465px;border:0;background:none;border-radius:50%;display:block}.cake-button:hover .cake-art{transform:translateY(-4px) rotate(-1deg)}.cake-art{width:100%;height:auto;display:block;overflow:visible;transition:transform .5s}.flame{transform-origin:50% 100%;transform-box:fill-box;animation:flicker 1.5s ease-in-out infinite alternate;transition:opacity .4s}.flame:nth-of-type(2){animation-delay:-.7s}.candle-smoke{opacity:0;transition:opacity .4s}.candles-out .flame{opacity:0;animation:none}.candles-out .candle-smoke{animation:smoke 1.5s ease-out forwards}.little-star{position:absolute;color:var(--gold);width:30px;height:30px;pointer-events:none;animation:star-turn 6s ease-in-out infinite}.star-one{top:45px;left:21px}.star-two{right:4px;top:280px;width:22px;height:22px;animation-delay:-3s}.cake-tag{position:absolute;right:1px;top:40px;width:113px;height:113px;transform:rotate(12deg);border-radius:50%;background:var(--paper);border:1px solid var(--pink);color:var(--wine);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:3px 5px 0 #3d526d;font-size:9px;line-height:1.7;letter-spacing:1.5px;text-transform:uppercase}.cake-tag b{font-family:var(--serif);font-size:26px;font-style:italic;font-weight:400;letter-spacing:0;text-transform:none;margin:2px 0}.cake-caption{position:absolute;left:50%;transform:translateX(-50%);bottom:2px;font-family:var(--serif);font-style:italic;font-size:15px;color:var(--rose);white-space:nowrap}.bunting{position:absolute;top:0;right:20px;width:215px;height:38px;opacity:.65;pointer-events:none}
+    .ribbon-line{display:flex;align-items:center;justify-content:center;gap:20px;margin:0 0 58px;color:var(--rose);font-size:9px;letter-spacing:2.6px;text-transform:uppercase;text-align:center}.ribbon-line::before,.ribbon-line::after{content:'';height:1px;flex:1;background:var(--line)}.ribbon-line svg{width:13px;height:13px;fill:var(--rose);flex-shrink:0}.letter-section{display:grid;grid-template-columns:1fr 1.03fr;align-items:center;gap:70px;padding:0 0 70px;position:relative}.section-kicker{font-size:9px;letter-spacing:2px;color:var(--rose);text-transform:uppercase;margin:0 0 15px}.section-title{font-family:var(--serif);font-size:38px;line-height:1.4;letter-spacing:-1.8px;font-weight:400;color:var(--wine);margin:0 0 16px}.section-title em{font-weight:400}.section-text{color:var(--muted);max-width:350px;font-size:12px;line-height:1.95}.open-letter{background:none;color:var(--wine);border:0;border-bottom:1px solid var(--wine);padding:4px 0;font-size:11px;display:inline-flex;align-items:center;gap:18px;margin-top:10px}.open-letter svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5}.envelope-area{position:relative;min-height:260px;display:flex;align-items:center;justify-content:center}.envelope-button{background:none;border:0;padding:0;width:345px;max-width:100%;transform:rotate(-6deg);transition:transform .35s;position:relative;filter:drop-shadow(0 18px 18px #ebcb9117)}.envelope-button:hover{transform:rotate(-3deg) translateY(-5px)}.envelope-button svg{display:block;width:100%;height:auto}.envelope-name{position:absolute;top:18%;left:15%;right:15%;font-size:11px;letter-spacing:.8px;color:var(--wine);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.envelope-caption{position:absolute;bottom:-24px;right:-10px;transform:rotate(6deg);font-family:var(--serif);font-style:italic;font-size:15px;color:var(--rose)}.envelope-area::before{content:'';position:absolute;border:1px solid #3d526d;inset:20px 20px 10px;transform:rotate(4deg)}.letter-card{width:100%;background:var(--paper);padding:28px 30px;border:1px solid #34465f;box-shadow:0 12px 28px #ebcb9109;transform:rotate(1deg);animation:letter-reveal .6s ease-out}.letter-card h3{font-family:var(--serif);font-style:italic;font-weight:400;font-size:23px;color:var(--wine);margin:0 0 16px;overflow-wrap:anywhere}.letter-card p{white-space:pre-wrap;font-size:12px;line-height:2;color:var(--muted);margin:0;overflow-wrap:anywhere}.letter-signature{display:block;margin-top:21px;text-align:right;font-family:var(--serif);font-style:italic;font-size:16px;color:var(--wine);overflow-wrap:anywhere}.letter-card .heart{font-size:18px;color:var(--rose);text-align:right;margin:8px 0 0}
+    .wishes{background:#112238;border-top:1px solid #2b3d56;border-bottom:1px solid #2b3d56}.wishes-inner{padding-top:53px;padding-bottom:49px}.wishes-header{text-align:center}.wishes-header .section-title{font-size:32px}.wish-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px;gap:35px}.wish-item{position:relative;text-align:center;padding:0 16px}.wish-item+.wish-item::before{content:'';position:absolute;top:8px;bottom:8px;left:-18px;width:1px;background:#34465f}.wish-icon{width:34px;height:34px;margin:0 auto 12px;color:var(--rose)}.wish-icon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.2}.wish-item h3{font-family:var(--serif);font-size:20px;font-weight:400;margin:0 0 6px;color:var(--wine)}.wish-item p{font-size:11px;color:var(--muted);max-width:230px;margin:0 auto;line-height:1.9}.footer{padding-top:28px;padding-bottom:30px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted)}.footer-heart{color:var(--rose);margin:0 4px}.footer-edit{background:none;border:0;border-bottom:1px solid var(--line);padding:2px 0;color:var(--muted);font-size:10px}
+    dialog{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:0;max-width:min(480px,calc(100vw - 32px));width:480px;box-shadow:0 28px 100px #00071340;max-height:calc(100dvh - 40px);overflow:auto}dialog::backdrop{background:#00071363;backdrop-filter:blur(6px)}.dialog-inner{padding:32px}.dialog-close{position:absolute;right:13px;top:13px;border:0;background:transparent;color:var(--muted);padding:7px;border-radius:50%;display:flex;align-items:center;justify-content:center;width:32px;height:32px;font-size:22px}.dialog-close:hover{background:#112238}.dialog-title{font-family:var(--serif);font-size:29px;line-height:1.45;letter-spacing:-1px;font-weight:400;color:var(--wine);margin:0 24px 8px 0}.dialog-sub{font-size:11px;line-height:1.9;color:var(--muted);margin:0 0 24px}.field{display:block;margin-bottom:16px;font-size:11px;color:var(--wine)}.field input,.field textarea{display:block;width:100%;padding:10px 12px;background:#0c1b30;border:1px solid var(--line);border-radius:5px;line-height:1.6;color:var(--ink);margin-top:6px;font-size:12px}.field textarea{resize:vertical;min-height:110px}.field input::placeholder,.field textarea::placeholder{color:#93a1b4}.field-row{display:grid;grid-template-columns:1fr 95px;gap:14px}.form-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:22px}.secondary{border:1px solid var(--line);border-radius:30px;padding:12px 17px;background:transparent;color:var(--wine);font-size:11px;min-height:46px}.secondary:hover{background:#112238}.wish-dialog{text-align:center;max-width:400px}.wish-dialog .dialog-title{margin:8px 0 14px}.wish-candle{font-size:48px;line-height:1.4;display:block;margin:4px 0 8px}.wish-dialog p{font-size:12px;line-height:2;color:var(--muted)}.wish-dialog .primary{margin-top:10px}.wish-dialog small{display:block;margin-top:14px;font-size:9px;color:var(--muted)}.copy-fallback{margin-top:15px}.copy-fallback input{width:100%;font-size:10px;padding:10px;border:1px solid var(--line);border-radius:5px}.copy-fallback p{font-size:10px;color:var(--muted)}.toast{position:fixed;bottom:28px;left:50%;transform:translate(-50%,20px);padding:12px 19px;border-radius:30px;background:var(--wine);color:var(--paper);font-size:11px;box-shadow:0 5px 30px #00071330;z-index:50;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;max-width:calc(100vw - 32px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:20}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @keyframes flicker{0%{transform:scale(.96,1) rotate(-4deg)}100%{transform:scale(1.05,.96) rotate(5deg)}}@keyframes smoke{0%{opacity:0;transform:translateY(0)}20%{opacity:.45}100%{opacity:0;transform:translateY(-38px)}}@keyframes star-turn{0%,100%{transform:rotate(-8deg) scale(.9)}50%{transform:rotate(15deg) scale(1.05)}}@keyframes sway{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}@keyframes letter-reveal{from{opacity:0;transform:translateY(14px) rotate(-3deg)}to{opacity:1;transform:translateY(0) rotate(1deg)}}
+    @media(min-width:1450px){.wrap{max-width:1300px}.hero{min-height:720px}.hero h1{font-size:90px}.cake-scene{min-height:520px}.cake-button{max-width:490px}.cake-scene::before{width:450px;height:450px}}
+    @media(max-width:1000px){.wrap{padding-left:32px;padding-right:32px}.hero{min-height:590px;gap:0}.hero h1{font-size:62px;letter-spacing:-3.7px}.cake-scene{min-height:425px}.cake-scene::before{width:330px;height:330px}.cake-tag{width:92px;height:92px;top:50px;right:0;font-size:7px}.cake-tag b{font-size:23px}.cake-caption{bottom:20px;font-size:13px}.star-one{left:8px;top:55px}.star-two{right:1px;top:280px}.hero-intro{font-size:12px;max-width:310px}.letter-section{gap:42px}.section-title{font-size:33px}.letter-card{padding:22px}.bunting{width:175px}}
+    @media(max-width:700px){.wrap{padding-left:24px;padding-right:24px}.topbar{padding-top:19px;padding-bottom:18px}.brand{font-size:11px;gap:6px}.brand svg{width:18px;height:18px}.top-actions{gap:8px}.nav-link{display:none}.icon-btn{font-size:9px;padding:8px 10px;gap:6px}.icon-btn svg{width:12px;height:12px}.hero{grid-template-columns:1fr;text-align:center;padding:45px 0 22px;gap:16px}.hero-copy{position:relative;z-index:1}.eyebrow{justify-content:center;font-size:8px;letter-spacing:1.6px;margin-bottom:18px}.eyebrow::before{width:18px}.hero h1{font-size:clamp(46px,11.8vw,68px);letter-spacing:-3px;margin-bottom:20px;line-height:1.18}.hero-intro{margin:22px auto 25px;max-width:345px;font-size:12px}.tiny-note{justify-content:center;margin-top:12px;font-size:9px}.primary{font-size:11px;padding:13px 19px}.cake-scene{width:100%;max-width:400px;margin:8px auto 0;min-height:350px}.cake-scene::before{width:300px;height:300px;transform:translate(0,0)}.cake-button{max-width:350px}.cake-tag{width:88px;height:88px;top:18px;right:2px}.cake-caption{bottom:5px}.star-one{top:30px;left:7px;width:22px;height:22px}.star-two{right:7px;top:245px}.bunting{display:none}.ribbon-line{gap:10px;margin:12px 0 45px;font-size:7px;letter-spacing:1.2px;line-height:2}.ribbon-line svg{width:9px;height:9px}.letter-section{grid-template-columns:1fr;gap:30px;text-align:center;padding-bottom:62px}.section-title{font-size:32px}.section-text{margin:0 auto}.section-kicker{font-size:8px}.envelope-area{min-height:230px;max-width:360px;width:100%;margin:0 auto}.envelope-button{width:285px}.envelope-area::before{inset:18px 20px 12px}.envelope-caption{font-size:13px}.letter-card{text-align:left;transform:none}.wishes-inner{padding-top:40px;padding-bottom:36px}.wishes-header .section-title{font-size:27px;letter-spacing:-1px}.wish-grid{grid-template-columns:1fr;gap:27px;margin-top:26px}.wish-item{display:grid;grid-template-columns:38px 1fr;column-gap:17px;max-width:325px;margin:auto;width:100%;text-align:left;padding:0}.wish-icon{grid-row:span 2;align-self:center;margin:0;width:30px;height:30px}.wish-item h3{font-size:19px;margin-bottom:3px}.wish-item p{max-width:none;margin:0;font-size:10px}.wish-item+.wish-item::before{display:none}.footer{justify-content:center;flex-direction:column;gap:10px;padding-top:22px;padding-bottom:24px;font-size:9px}.dialog-inner{padding:28px 22px}.dialog-title{font-size:26px}.field-row{grid-template-columns:1fr 80px}.dialog-sub{font-size:10px}.form-actions .primary,.form-actions .secondary{flex:1;font-size:10px}.toast{bottom:18px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.candles-out .candle-smoke{display:none}}
+    body{background-image:radial-gradient(ellipse at 87% 6%,#28415a55,transparent 42%)}
+    .cake-scene::before{background:radial-gradient(circle,#284561,#172c45 65%,#14263c);box-shadow:0 0 100px #31577520;opacity:1}
+    .hero h1 em{font-family:var(--sans);font-style:normal;letter-spacing:-4px;font-size:.88em}
+    .cake-tag b{font-family:var(--sans);font-style:normal;font-size:38px;line-height:1.2}
+    .cake-tag{background:#14283f;box-shadow:3px 5px 0 #354b65}
+    .letter-card{background:linear-gradient(135deg,#172b44,#13233a)}
+    .envelope-name{color:#f0d39a}
+    @media(max-width:700px){.hero h1 em{letter-spacing:-2px}.cake-tag b{font-size:31px}}
+  </style>
+</head>
+<body>
+  <svg class="sr-only" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="icon-star" viewBox="0 0 32 32"><path d="M16 0l3.5 12.5L32 16l-12.5 3.5L16 32l-3.5-12.5L0 16l12.5-3.5Z" fill="currentColor"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-music" viewBox="0 0 24 24"><path d="M9 17V6l11-3v11M9 9l11-3"/><ellipse cx="5.5" cy="18" rx="3.5" ry="3"/><ellipse cx="16.5" cy="15" rx="3.5" ry="3"/></symbol>
+    <symbol id="icon-edit" viewBox="0 0 24 24"><path d="m15 5 4 4M4 20l1-6L16 3a2 2 0 0 1 3 0l2 2a2 2 0 0 1 0 3L10 19l-6 1Z"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+  </defs></svg>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Một ngày thật đẹp — về đầu trang"><svg aria-hidden="true"><use href="#icon-star"/></svg><span>chào một chương mới.</span></a>
+      <nav class="top-actions" aria-label="Thiệp sinh nhật">
+        <a class="nav-link" href="#loi-chuc">Một lời chúc nhỏ</a>
+        <button class="icon-btn" id="music-button" type="button" aria-pressed="false"><svg aria-hidden="true"><use href="#icon-music"/></svg><span id="music-label">Bật nhạc</span></button>
+        <button class="icon-btn" type="button" id="edit-button"><svg aria-hidden="true"><use href="#icon-edit"/></svg><span>Sửa thiệp</span></button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="birthday-title">
+        <svg class="bunting" viewBox="0 0 215 38" aria-hidden="true"><path d="M0 2Q110 55 215 2" stroke="#bd7886" fill="none"/><path d="m23 12 17 5-12 14Z" fill="#dba0a9"/><path d="m56 22 18 4-10 12Z" fill="#d7b580"/><path d="m93 28 18 1-9 9Z" fill="#dba0a9"/><path d="m133 27 18-4-6 15Z" fill="#d7b580"/><path d="m171 19 17-6-3 18Z" fill="#dba0a9"/></svg>
+        <div class="hero-copy">
+          <p class="eyebrow" id="recipient-line">Dành cho chàng trai tuổi 23</p>
+          <h1 id="birthday-title">Chào tuổi<br><em id="hero-age-line">23 rực rỡ!</em></h1>
+          <p class="hero-intro"><strong>Chúc mừng sinh nhật, chàng trai!</strong><br>Một chặng đường mới, những mục tiêu mới.<br>Chúc bạn vững vàng, vui vẻ và sống hết mình.</p>
+          <button class="primary" id="wish-button" type="button"><span id="wish-button-label">Ước một điều & thổi nến</span><svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+          <p class="tiny-note" id="cake-status"><svg aria-hidden="true"><use href="#icon-heart"/></svg><span>Nhắm mắt một chút, rồi ước nhé.</span></p>
+        </div>
+        <div class="cake-scene" id="cake-scene">
+          <svg class="little-star star-one" aria-hidden="true"><use href="#icon-star"/></svg>
+          <svg class="little-star star-two" aria-hidden="true"><use href="#icon-star"/></svg>
+          <button class="cake-button" id="cake-button" type="button" aria-label="Ước một điều và thổi nến trên bánh sinh nhật">
+            <svg class="cake-art" viewBox="0 0 500 480" role="img" aria-labelledby="cake-art-title">
+              <title id="cake-art-title">Bánh kem xanh navy với nến số 23 đang cháy</title>
+              <defs>
+                <linearGradient id="cake-side" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#2f577d"/><stop offset=".43" stop-color="#4a7599"/><stop offset="1" stop-color="#244767"/></linearGradient>
+                <linearGradient id="frosting" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff3e8"/><stop offset="1" stop-color="#f4d7c9"/></linearGradient>
+                <linearGradient id="cake-stand" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#e4bbb0"/><stop offset=".5" stop-color="#f3d9cc"/><stop offset="1" stop-color="#cea293"/></linearGradient>
+                <radialGradient id="cherry"><stop stop-color="#6588aa"/><stop offset="1" stop-color="#2c4b69"/></radialGradient>
+                <filter id="cake-shadow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+              </defs>
+              <ellipse cx="252" cy="425" rx="149" ry="16" fill="#aa7574" opacity=".17" filter="url(#cake-shadow)"/>
+              <path d="M234 350h34l6 51q10 9 38 10v10H188v-10q29-1 39-10Z" fill="url(#cake-stand)" stroke="#c79b8e" stroke-width="1"/>
+              <ellipse cx="250" cy="416" rx="63" ry="10" fill="#efd2c4" stroke="#cea293"/>
+              <ellipse cx="250" cy="351" rx="163" ry="40" fill="#d1a093"/>
+              <ellipse cx="250" cy="345" rx="163" ry="40" fill="#f4d7c9" stroke="#cda495"/>
+              <ellipse cx="250" cy="343" rx="146" ry="33" fill="#ebc6b9" stroke="#dfb4a6"/>
+              <path d="M115 232v102c0 50 270 50 270 0V232Z" fill="url(#cake-side)" stroke="#1a354d" stroke-width="1"/>
+              <path d="M119 281q131 60 262 0M119 295q131 60 262 0" fill="none" stroke="#a1bed3" stroke-width="1.5" opacity=".4"/>
+              <path d="M116 320q133 66 268 0v14c0 50-268 50-268 0Z" fill="#24496a" opacity=".4"/>
+              <path d="M117 239v20q0 16 11 16c11 0 10-14 21-10s4 29 17 31 10-28 25-21 3 26 17 29 12-21 24-17 6 31 20 31 11-27 26-29 9 22 21 20 8-23 19-26 8 18 20 13 5-23 17-28 14 8 25-1c4-4 5-13 5-27Z" fill="url(#frosting)" stroke="#d0a391" stroke-width=".8"/>
+              <ellipse cx="250" cy="231" rx="135" ry="42" fill="#fcdfd3" stroke="#d4a997"/>
+              <ellipse cx="250" cy="228" rx="116" ry="31" fill="#ffe9df"/>
+              <g fill="#fff3e8" stroke="#d8b1a2" stroke-width=".7">
+                <path d="M112 230q-3-13 8-20 11-8 19 3 9 13-3 20-16 7-24-3ZM132 210q-1-14 11-18 15-3 20 8t-9 17q-17 5-22-7ZM161 199q1-14 16-16 13-1 17 9t-10 17q-15 3-23-10ZM194 192q1-13 17-14 15 0 17 11t-14 15q-16 1-20-12ZM230 188q1-13 18-13 16 1 17 12t-16 15q-17-1-19-14ZM268 190q1-13 17-12 17 3 16 14t-16 13q-17-2-17-15ZM306 196q3-13 18-9 16 5 12 17t-20 10q-14-5-10-18ZM339 209q5-13 19-6 13 7 9 18t-21 6q-13-6-7-18ZM359 231q5-12 19-5 12 8 6 19t-21 4q-12-7-4-18Z"/>
+              </g>
+              <g stroke="#c3a670" stroke-width="1.5" fill="none"><path d="M146 218q-4-24 10-28M329 212q9-25-3-32M243 205q-5-15 3-28"/></g>
+              <g fill="url(#cherry)"><circle cx="145" cy="218" r="11"/><circle cx="329" cy="212" r="11"/><circle cx="243" cy="205" r="10"/></g>
+              <g fill="#d5e6f1" opacity=".65"><ellipse cx="142" cy="214" rx="3" ry="2"/><ellipse cx="326" cy="208" rx="3" ry="2"/><ellipse cx="240" cy="201" rx="2.5" ry="1.5"/></g>
+              <defs><linearGradient id="candle-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe9ac"/><stop offset=".5" stop-color="#e0b96d"/><stop offset="1" stop-color="#b28740"/></linearGradient></defs>
+              <text id="number-candles-shadow" x="253" y="213" text-anchor="middle" fill="#96733c" font-family="BirthdaySans,system-ui,sans-serif" font-weight="700" font-size="98" letter-spacing="1">23</text>
+              <text id="number-candles" x="250" y="210" text-anchor="middle" fill="url(#candle-gold)" stroke="#aa8145" stroke-width="1" paint-order="stroke" font-family="BirthdaySans,system-ui,sans-serif" font-weight="700" font-size="98" letter-spacing="1">23</text>
+              <g stroke="#5c4a31" stroke-width="2"><path d="M220 140v-10M282 140v-10"/></g>
+              <g class="flame"><path d="M220 97c-14 18-13 36 0 36s16-18 0-36Z" fill="#e4b064"/><path d="M220 115c-7 10-7 18 0 18s8-8 0-18Z" fill="#fff3c8"/></g>
+              <g class="flame" style="animation-delay:-.7s"><path d="M282 97c-14 18-13 36 0 36s16-18 0-36Z" fill="#e4b064"/><path d="M282 115c-7 10-7 18 0 18s8-8 0-18Z" fill="#fff3c8"/></g>
+              <g class="candle-smoke" fill="none" stroke="#a7bdcd" stroke-width="2"><path d="M220 130q-12-10 0-20t0-20M282 130q-12-10 0-20t0-20"/></g>
+              <g fill="#fff1e5" stroke="#a58a64" stroke-width=".6">
+                <circle cx="129" cy="332" r="8"/><circle cx="145" cy="344" r="8"/><circle cx="163" cy="353" r="8"/><circle cx="182" cy="359" r="8"/><circle cx="202" cy="363" r="8"/><circle cx="222" cy="366" r="8"/><circle cx="243" cy="367" r="8"/><circle cx="264" cy="367" r="8"/><circle cx="285" cy="365" r="8"/><circle cx="306" cy="362" r="8"/><circle cx="326" cy="357" r="8"/><circle cx="345" cy="350" r="8"/><circle cx="363" cy="341" r="8"/><circle cx="377" cy="330" r="8"/>
+              </g>
+              <text x="250" y="326" text-anchor="middle" fill="#eed397" font-family="BirthdaySerif,Georgia,serif" font-size="16" letter-spacing="1.5" transform="rotate(2 250 326)">HAPPY BIRTHDAY</text>
+              <g fill="#e8c789"><path d="M155 306c-6-8-14 0 0 10 14-10 6-18 0-10ZM341 305c-6-8-14 0 0 10 14-10 6-18 0-10Z"/></g>
+            </svg>
+          </button>
+          <div class="cake-tag" aria-hidden="true">Chương mới<b id="tag-age-number">23</b><span id="age-label">sống hết mình</span></div>
+          <span class="cake-caption" id="cake-caption">một điều ước, một hành trình mới.</span>
+        </div>
+      </section>
+      <div class="ribbon-line" aria-hidden="true"><svg><use href="#icon-heart"/></svg><span><span id="birthday-motto">23 tuổi · Dám mơ, dám làm, dám tỏa sáng</span></span><svg><use href="#icon-heart"/></svg></div>
+      <section class="letter-section" id="loi-chuc" aria-labelledby="letter-heading">
+        <div>
+          <p class="section-kicker">01 / Một lời chúc nhỏ</p>
+          <h2 class="section-title" id="letter-heading">Một lời chúc<br>cho <em>chặng đường mới.</em></h2>
+          <p class="section-text">Tuổi mới không cần phải có tất cả câu trả lời. Chỉ cần bạn tiếp tục bước tới, theo cách của chính mình. Mở phong bì này nhé!</p>
+          <button class="open-letter" id="open-letter" type="button" aria-expanded="false" aria-controls="birthday-letter"><span id="letter-button-label">Mở lời chúc</span><svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+        </div>
+        <div class="envelope-area" id="envelope-area">
+          <button class="envelope-button" id="envelope-button" type="button" aria-label="Mở phong bì lời chúc sinh nhật">
+            <svg viewBox="0 0 350 235" aria-hidden="true"><rect x="3" y="3" width="344" height="229" rx="4" fill="#233e5b" stroke="#647b93"/><path d="M4 4 175 142 347 4" fill="#2d4b6a" stroke="#647b93"/><path d="M4 231 126 116M347 231 224 116" fill="none" stroke="#647b93"/><path d="m4 230 133-112 38 31 38-31 134 112Z" fill="#264360" stroke="#647b93"/><circle cx="175" cy="144" r="22" fill="#d2ad69" stroke="#a58852" stroke-width="2"/><circle cx="175" cy="144" r="17" fill="none" stroke="#f5dca9"/><path d="M175 151c-18-12-10-23 0-14 10-9 18 2 0 14Z" fill="#324964"/><path d="m293 21 9 2 2 9-8 5-8-6Z" fill="none" stroke="#a8bed0"/><path d="M281 46h43m-43 4h43m-43 4h43" stroke="#6e849b" stroke-width=".6"/></svg>
+            <span class="envelope-name" id="envelope-name">Gửi bạn yêu quý</span>
+            <span class="envelope-caption">mở ra một chút yêu thương ↗</span>
+          </button>
+          <article class="letter-card" id="birthday-letter" hidden tabindex="-1" aria-labelledby="letter-greeting">
+            <h3 id="letter-greeting">Bạn yêu quý,</h3>
+            <p id="letter-message"></p>
+            <span class="letter-signature" id="letter-sender"></span>
+            <div class="heart" aria-hidden="true">♡</div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <section class="wishes" aria-labelledby="wishes-heading">
+    <div class="wrap wishes-inner">
+      <div class="wishes-header"><p class="section-kicker">02 / Cho một tuổi mới</p><h2 class="section-title" id="wishes-heading">Cho tuổi 23, chúc bạn…</h2></div>
+      <div class="wish-grid">
+        <div class="wish-item"><div class="wish-icon" aria-hidden="true"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="8"/><path d="M18 2v4m0 24v4M2 18h4m24 0h4M6.7 6.7l3 3m16.6 16.6 3 3m0-22.6-3 3M9.7 26.3l-3 3"/><path d="M14 20q4 4 8 0"/><circle cx="14" cy="16" r=".5"/><circle cx="22" cy="16" r=".5"/></svg></div><h3>Sức khỏe</h3><p>Luôn khỏe mạnh để tận hưởng cuộc sống và theo đuổi điều mình muốn.</p></div>
+        <div class="wish-item"><div class="wish-icon" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M18 29S3 20 5 12c2-7 10-7 13-1 3-6 11-6 13 1 2 8-13 17-13 17Z"/><path d="M9 14q-1 4 3 6"/></svg></div><h3>Vững vàng</h3><p>Giữ được bình an, tự tin bước tới và luôn có bạn bè bên cạnh.</p></div>
+        <div class="wish-item"><div class="wish-icon" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="m18 4 4 9 10 1-8 7 2 10-8-5-8 5 2-10-8-7 10-1Z"/><path d="m29 3 3-2M33 8h3M3 27l-3 2"/></svg></div><h3>Thành công</h3><p>Công việc thuận lợi, mục tiêu rõ ràng và những dự định sớm thành hiện thực.</p></div>
+      </div>
+    </div>
+  </section>
+  <footer class="wrap footer"><span><span id="footer-greeting">Chúc bạn một tuổi 23 thật đáng nhớ.</span> <span class="footer-heart">♡</span></span><button class="footer-edit" id="footer-edit" type="button">Viết thiệp theo cách của bạn ↗</button></footer>
+  <dialog id="edit-dialog" aria-labelledby="edit-title">
+    <button class="dialog-close" type="button" data-close="edit-dialog" aria-label="Đóng phần sửa thiệp">×</button>
+    <div class="dialog-inner">
+      <p class="section-kicker">Thêm một chút riêng của bạn</p>
+      <h2 class="dialog-title" id="edit-title">Một tấm thiệp, một người đặc biệt.</h2>
+      <p class="dialog-sub">Đổi tên và viết lời chúc của bạn. Bấm lưu để xem ngay trên thiệp.</p>
+      <form id="edit-form">
+        <div class="field-row"><label class="field" for="name-input">Tên người nhận<input id="name-input" name="name" type="text" maxlength="60" placeholder="Ví dụ: Hoàng Nam" autocomplete="off"></label><label class="field" for="age-input">Tuổi mới<input id="age-input" name="age" type="number" min="1" max="120" value="23" placeholder="23" inputmode="numeric"></label></div>
+        <label class="field" for="sender-input">Người gửi<input id="sender-input" name="sender" type="text" maxlength="80" placeholder="Tên hoặc lời ký của bạn" autocomplete="off"></label>
+        <label class="field" for="message-input">Lời chúc<textarea id="message-input" name="message" maxlength="1200" rows="5" placeholder="Viết những điều bạn muốn gửi…"></textarea></label>
+        <div class="form-actions"><button class="primary" type="submit">Lưu lời chúc <svg aria-hidden="true"><use href="#icon-heart"/></svg></button><button class="secondary" type="button" id="copy-link">Sao chép liên kết</button></div>
+        <div id="copy-fallback" class="copy-fallback" hidden><p>Chọn và sao chép liên kết thiệp bên dưới:</p><input id="link-output" readonly aria-label="Liên kết thiệp sinh nhật"></div>
+      </form>
+    </div>
+  </dialog>
+  <dialog id="wish-dialog" class="wish-dialog" aria-labelledby="wish-title">
+    <button class="dialog-close" type="button" data-close="wish-dialog" aria-label="Đóng phần điều ước">×</button>
+    <div class="dialog-inner"><span class="wish-candle" aria-hidden="true">🕯️</span><p class="section-kicker">Một khoảnh khắc dành riêng cho bạn</p><h2 class="dialog-title" id="wish-title">Ước một điều nhé.</h2><p>Nhắm mắt, hít một hơi thật sâu.<br>Nghĩ về điều bạn mong muốn nhất.<br>Rồi thổi nến, và chào một chặng đường mới.</p><button class="primary" type="button" id="blow-candles">Mình ước xong rồi, thổi nến! <svg aria-hidden="true"><use href="#icon-star"/></svg></button><small>Giữ điều ước trong lòng, để nó thật đặc biệt.</small></div>
+  </dialog>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+  <script>
+    'use strict';
+    const $ = (id) => document.getElementById(id);
+    const DEFAULT_MESSAGE = 'Chúc mừng sinh nhật tuổi 23! Chúc bạn luôn khỏe mạnh, giữ được nhiệt huyết và vững vàng trước những thử thách. Mong công việc thuận lợi, những dự định đang ấp ủ sớm thành hiện thực, và mỗi ngày đều có điều khiến bạn mỉm cười.\n\nTuổi 23, cứ hết mình với những điều bạn tin tưởng. Có thể chưa có tất cả câu trả lời, nhưng bạn vẫn đang tiến lên mỗi ngày. Chúc bạn một năm thật đáng nhớ!';
+    const DEFAULT_SENDER = 'Gửi bạn những lời chúc tốt đẹp nhất';
+    const params = new URLSearchParams(location.search);
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem('birthday-card-23-v2') || '{}') || {}; } catch {}
+    const hasSharedCard = ['n','s','m','a'].some(key => params.has(key));
+    const safeText = (value, max) => typeof value === 'string' ? value.trim().slice(0,max) : '';
+    const source = hasSharedCard ? {name:params.get('n'),sender:params.get('s'),message:params.get('m'),age:params.get('a')} : saved;
+    const validAge = value => { const n = Number(value); return Number.isInteger(n) && n >= 1 && n <= 120 ? String(n) : ''; };
+    let card = { name:safeText(source.name,60), sender:safeText(source.sender,80), message:safeText(source.message,1200), age:validAge(source.age) || '23' };
+    let candleState = true;
+    let letterOpen = false;
+    let toastTimeout;
+    function toast(message) { $('toast').textContent = message; $('toast').classList.add('show'); clearTimeout(toastTimeout); toastTimeout = setTimeout(() => $('toast').classList.remove('show'), 4200); }
+    function renderCard() {
+      const name = card.name || 'chàng trai tuổi ' + card.age;
+      $('recipient-line').textContent = card.name ? 'Gửi ' + name + ' · tuổi ' + card.age : 'Dành cho ' + name;
+      $('envelope-name').textContent = 'Gửi ' + name;
+      $('letter-greeting').textContent = (card.name || 'Chàng trai tuổi ' + card.age) + ',';
+      $('letter-message').textContent = card.message || DEFAULT_MESSAGE.replaceAll('23',card.age);
+      $('letter-sender').textContent = card.sender || DEFAULT_SENDER;
+      $('age-label').textContent = 'sống hết mình';
+      $('hero-age-line').textContent = card.age + ' rực rỡ!';
+      $('tag-age-number').textContent = card.age;
+      $('number-candles').textContent = card.age;
+      $('number-candles-shadow').textContent = card.age;
+      $('birthday-motto').textContent = card.age + ' tuổi · Dám mơ, dám làm, dám tỏa sáng';
+      $('wishes-heading').textContent = 'Cho tuổi ' + card.age + ', chúc bạn…';
+      $('footer-greeting').textContent = 'Chúc bạn một tuổi ' + card.age + ' thật đáng nhớ.';
+      document.title = 'Chúc mừng sinh nhật ' + (card.name || 'chàng trai') + ' — Tuổi ' + card.age;
+    }
+    function openEditor() {
+      $('name-input').value = card.name;
+      $('sender-input').value = card.sender;
+      $('message-input').value = card.message || DEFAULT_MESSAGE;
+      $('age-input').value = card.age;
+      $('copy-fallback').hidden = true;
+      $('edit-dialog').showModal();
+    }
+    function saveEditor() {
+      card = {name:safeText($('name-input').value,60),sender:safeText($('sender-input').value,80),message:safeText($('message-input').value,1200),age:validAge($('age-input').value) || '23'};
+      try { localStorage.setItem('birthday-card-23-v2',JSON.stringify(card)); } catch {}
+      const url = new URL(location.href);
+      ['n','s','m','a'].forEach(key => url.searchParams.delete(key));
+      if (card.name) url.searchParams.set('n',card.name);
+      if (card.sender) url.searchParams.set('s',card.sender);
+      if (card.message && card.message !== DEFAULT_MESSAGE) url.searchParams.set('m',card.message);
+      if (card.age) url.searchParams.set('a',card.age);
+      if (![...url.searchParams.keys()].some(key => ['n','s','m','a'].includes(key))) url.searchParams.set('n','');
+      history.replaceState(null,'',url.toString());
+      renderCard();
+      return url.toString();
+    }
+    $('edit-button').addEventListener('click',openEditor);
+    $('footer-edit').addEventListener('click',openEditor);
+    $('edit-form').addEventListener('submit',event => {event.preventDefault();saveEditor();$('edit-dialog').close();toast('Đã lưu. Tấm thiệp giờ mang lời chúc của bạn ♡');});
+    $('copy-link').addEventListener('click',async () => {
+      if (!$('edit-form').reportValidity()) return;
+      const url = saveEditor();
+      try { await navigator.clipboard.writeText(url); toast('Đã sao chép liên kết thiệp ♡'); }
+      catch { $('copy-fallback').hidden = false; $('link-output').value = url; $('link-output').focus(); $('link-output').select(); }
+    });
+    document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click',() => $(button.dataset.close).close()));
+    document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('click',event => {if(event.target === dialog){const bounds=dialog.getBoundingClientRect();if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom)dialog.close();}}));
+    function toggleLetter() {
+      letterOpen = !letterOpen;
+      $('birthday-letter').hidden = !letterOpen;
+      $('envelope-button').hidden = letterOpen;
+      $('open-letter').setAttribute('aria-expanded',String(letterOpen));
+      $('letter-button-label').textContent = letterOpen ? 'Gấp lời chúc lại' : 'Mở lời chúc';
+      if (letterOpen) $('birthday-letter').focus({preventScroll:true});
+    }
+    $('open-letter').addEventListener('click',toggleLetter);
+    $('envelope-button').addEventListener('click',toggleLetter);
+    function startWish() {
+      if (!candleState) {
+        candleState = true;
+        $('cake-scene').classList.remove('candles-out');
+        $('wish-button-label').textContent = 'Ước một điều & thổi nến';
+        $('cake-button').setAttribute('aria-label','Ước một điều và thổi nến trên bánh sinh nhật');
+        $('cake-art-title').textContent = 'Bánh kem xanh navy với nến số ' + card.age + ' đang cháy';
+        $('cake-status').lastElementChild.textContent = 'Nhắm mắt một chút, rồi ước nhé.';
+        $('cake-caption').textContent = 'một điều ước, một hành trình mới.';
+      } else $('wish-dialog').showModal();
+    }
+    $('wish-button').addEventListener('click',startWish);
+    $('cake-button').addEventListener('click',startWish);
+    $('blow-candles').addEventListener('click',() => {
+      $('wish-dialog').close(); candleState = false;
+      $('cake-scene').classList.add('candles-out');
+      $('wish-button-label').textContent = 'Thắp nến lần nữa';
+      $('cake-button').setAttribute('aria-label','Thắp lại nến trên bánh sinh nhật');
+      $('cake-art-title').textContent = 'Bánh kem xanh navy với nến số ' + card.age + ' đã được thổi tắt';
+      $('cake-status').lastElementChild.textContent = 'Mong điều ước của bạn thành hiện thực ♡';
+      $('cake-caption').textContent = 'chúc tuổi mới của bạn thật rực rỡ.';
+      $('announcement').textContent = 'Nến đã tắt. Chúc mừng sinh nhật ' + (card.name || 'bạn') + '! Mong điều ước của bạn thành hiện thực.';
+      celebrate();
+      if (musicOn) playChime();
+    });
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let confettiFrame = 0;
+    function celebrate() {
+      cancelAnimationFrame(confettiFrame);
+      const canvas = $('confetti'); const context = canvas.getContext('2d');
+      if (!context) return;
+      context.clearRect(0,0,canvas.width,canvas.height);
+      if (reducedMotion.matches) {toast('Chúc mừng sinh nhật! Mong mọi điều tốt đẹp đến với bạn ♡');return;}
+      const width = window.innerWidth, height = window.innerHeight, dpr = Math.min(window.devicePixelRatio || 1,2);
+      canvas.width = width*dpr; canvas.height = height*dpr; context.setTransform(dpr,0,0,dpr,0,0);
+      const colors=['#e6c587','#9abbd9','#cfaa65','#f7e3b6','#5b88ae','#d4dce9'];
+      const pieces=Array.from({length:120},(_,i)=>({x:width/2+(Math.random()-.5)*width*.35,y:height*.38,vx:(Math.random()-.5)*14,vy:-Math.random()*12-3,size:Math.random()*5+3,angle:Math.random()*6,spin:(Math.random()-.5)*.15,color:colors[i%colors.length],round:i%5===0}));
+      const started=performance.now(); let previous=started;
+      function frame(time) {
+        const dt=Math.min((time-previous)/16.67,2);previous=time;
+        context.clearRect(0,0,width,height);context.globalAlpha=Math.max(0,Math.min(1,(4400-(time-started))/900));
+        pieces.forEach(p=>{p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=.14*dt;p.vx*=Math.pow(.993,dt);p.angle+=p.spin*dt;context.save();context.translate(p.x,p.y);context.rotate(p.angle);context.fillStyle=p.color;if(p.round){context.beginPath();context.arc(0,0,p.size/2,0,Math.PI*2);context.fill();}else context.fillRect(-p.size/2,-p.size/2,p.size,p.size*.6);context.restore();});
+        if(time-started<4400)confettiFrame=requestAnimationFrame(frame);else context.clearRect(0,0,width,height);
+      }
+      confettiFrame=requestAnimationFrame(frame);
+    }
+    let audioContext, musicOn=false, musicTimer;
+    const activeVoices = new Set();
+    function stopVoices() {activeVoices.forEach(voice => {try{voice.stop();}catch{}});activeVoices.clear();}
+    const melody=[[392,.45],[392,.2],[440,.65],[392,.65],[523.25,.65],[493.88,1.2],[392,.45],[392,.2],[440,.65],[392,.65],[587.33,.65],[523.25,1.2],[392,.45],[392,.2],[783.99,.65],[659.25,.65],[523.25,.65],[493.88,.65],[440,1.1],[698.46,.45],[698.46,.2],[659.25,.65],[523.25,.65],[587.33,.65],[523.25,1.5]];
+    function note(frequency,start,duration,volume=.05) {
+      const oscillator=audioContext.createOscillator(), gain=audioContext.createGain();
+      oscillator.type='sine';oscillator.frequency.value=frequency;
+      gain.gain.setValueAtTime(0,start);gain.gain.linearRampToValueAtTime(volume,start+.018);gain.gain.exponentialRampToValueAtTime(.001,start+duration+.4);
+      oscillator.connect(gain);gain.connect(audioContext.destination);activeVoices.add(oscillator);
+      oscillator.onended=()=>{activeVoices.delete(oscillator);oscillator.disconnect();gain.disconnect();};
+      oscillator.start(start);oscillator.stop(start+duration+.45);
+    }
+    function playMelody() {if(!musicOn)return;let time=audioContext.currentTime+.1;melody.forEach(([frequency,duration])=>{note(frequency,time,duration);note(frequency/2,time,duration,.017);time+=duration;});musicTimer=setTimeout(playMelody,(time-audioContext.currentTime+3)*1000);}
+    function playChime() {if(!audioContext||audioContext.state!=='running')return;[523.25,659.25,783.99,1046.5].forEach((frequency,index)=>note(frequency,audioContext.currentTime+index*.12,.45,.045));}
+    function updateMusic() {$('music-button').setAttribute('aria-pressed',String(musicOn));$('music-button').classList.toggle('sound-on',musicOn);$('music-label').textContent=musicOn?'Tắt nhạc':'Bật nhạc';}
+    $('music-button').addEventListener('click',async () => {
+      const button=$('music-button');button.disabled=true;
+      try {const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)throw new Error('Unsupported');if(!audioContext)audioContext=new Audio();if(musicOn){musicOn=false;clearTimeout(musicTimer);stopVoices();await audioContext.suspend();}else{await audioContext.resume();musicOn=true;playMelody();}updateMusic();}
+      catch {musicOn=false;clearTimeout(musicTimer);stopVoices();updateMusic();toast('Trình duyệt chưa phát được nhạc. Bạn vẫn có thể mở lời chúc và thổi nến nhé.');}
+      finally {button.disabled=false;}
+    });
+    document.addEventListener('visibilitychange',async () => {if(document.hidden && musicOn){musicOn=false;clearTimeout(musicTimer);stopVoices();try{await audioContext.suspend();}catch{}updateMusic();}});
+    renderCard();
+  </script>
+</body>
+</html>
